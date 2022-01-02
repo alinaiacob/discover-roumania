@@ -1,0 +1,50 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  background-color: #1B1717;
+  color:#EEEBDD;
+  
+  height: 100vh;
+
+ padding: 0  20px;
+ overflow-x: scroll;
+ scroll-behavior: smooth;
+ 
+
+  
+  
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.horizontal__scroll{
+  display: flex;
+  justify-content: space-between;
+  
+  height: calc( 100vh - 70px);
+  padding: 20px 60px;
+}
+
+.places__popular>h3{
+  font-size: 20px;
+  opacity: 0.8;
+}
+.places__popular>h1{
+  font-size: 50px;
+  color:rgb(0, 255, 0);
+}
+.places__container{
+  display: flex;
+  padding: 0px 30px;
+}
+@media screen and (max-width:800px){
+  .places__popular{
+    font-size: 30px;
+   width: 100vw;
+   padding: 40px 10px;
+  }
+  .horizontal__scroll{
+    padding: 20px;
+    justify-content: space-between;
+  }
+}

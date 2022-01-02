@@ -1,0 +1,104 @@
+.home{
+    display:flex;
+    justify-content: space-between;
+    
+  padding-top: 30px;
+
+
+ height: calc( 100vh - 70px);
+
+}
+.home__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+ 
+ 
+
+    
+}
+.home__left h4{
+    font-size: 20px;
+}
+.home__left h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.home__left p{
+    font-size: 17px;
+    opacity: 0.8;
+    margin-top: 10px;
+ 
+}
+.home button{
+
+color:white;
+border: none;
+border-radius:30px ;
+padding: 10px 20px;
+font-size: 18px;
+font-family: 'Montserrat',sans-serif;
+letter-spacing: 0.1rem;
+margin-top: 10px;
+transition: 0.3s all ease-in-out;
+width: 60%;
+max-width: 300px;
+background: linear-gradient(90deg, rgba(255,5,5,1) 0%, rgba(236,202,4,1) 50%, rgba(32,13,205,1) 100%);
+}
+.home button:hover{
+    background: #CE1212;
+    
+    color:black;
+}
+.home__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60%;
+   
+ 
+
+   
+}
+.homeRight__PlacesPopular{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+  padding: 100px;
+    
+}
+.homeRight__PlacesPopular h1{
+    font-size: 30px;
+    color:rgb(6, 255, 6);
+    
+}
+.homeRight__PlacesPopular h3{
+    font-size: 20px;
+    opacity: 0.9;
+}
+@media only screen and (max-width:800px){
+   
+  .home__left{
+     width: 100vw;
+  }
+  .home__left p{
+      width: 100%;
+      max-width:90vw;
+      font-size: 18px;
+  }
+    .home__right{
+        min-width: 100vw;
+    }
+    .homeRight__PlacesPopular{
+        width: 100vw;
+        align-items: center;
+        align-self: flex-start;
+        padding: 100px 0px;
+    }
+    .homeRight__PlacesPopular h1{
+        font-size: 30px;
+        letter-spacing: 0.05rem;
+    }
+}
